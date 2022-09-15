@@ -1,0 +1,34 @@
+<section>
+
+  <fieldset>
+    <label for="">Seccion Clase </label>
+    <input
+      type="text"
+      name="seccion"
+      [value]="nuevoHistorial.seccion"
+      (input)="cambiarSeccion($event)"
+      >
+      <p>{{ nuevoHistorial.seccion }}</p>
+  </fieldset>
+
+  <fieldset>
+    <label for="">Nombre Clase </label>
+    <input
+      type="text"
+      name="nombre"
+      [value]="nuevoHistorial.nombre"
+      (input)="cambiarNombre($event)"
+      >
+      <p>{{ nuevoHistorial.nombre }}</p>
+  </fieldset>
+
+  <fieldset>
+    <button
+      type="button"
+      role="button"
+      (click)="guardarHistorialSecc()"
+    >
+      Guardar
+    </button>
+  </fieldset>
+</section>

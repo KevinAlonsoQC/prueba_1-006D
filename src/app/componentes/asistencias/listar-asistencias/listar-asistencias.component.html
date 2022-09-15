@@ -1,0 +1,28 @@
+<div [ngClass]='{contenido_select: true}'>
+  <div class="titulo">
+    <h4>Asistencias</h4>
+
+    <p>Analiza y observa la asistencia de tus alumnos</p>
+  </div>
+  <div [ngClass]="{fondo_contenido_datos:true}">
+    <div [ngClass]="{contenido_datos:true}">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Seccion</th>
+            <th scope="col">Alumno</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+
+        <tbody class="table-group-divider">
+          <app-asistencia *ngFor="let item  of asistencias" [asistencia] = "item">
+          </app-asistencia>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

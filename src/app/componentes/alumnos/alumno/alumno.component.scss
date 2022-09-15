@@ -1,0 +1,23 @@
+.contenido_select{
+  height: 100%;
+  width: 100%;
+}
+
+.titulo{
+  margin: 0 auto;
+
+  font-size: 13px;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.fondo_contenido_datos{
+  background: linear-gradient(to right, rgb(51, 54, 61), #2E323C);
+
+  width: 100%;
+  height: 77%;
+
+  border-radius: 30px;
+  border: 1px solid black;
+}
+

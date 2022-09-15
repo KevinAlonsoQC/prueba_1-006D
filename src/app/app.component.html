@@ -1,0 +1,53 @@
+<div class='dashboard'>
+  <br><br>
+  <div class="menu_dash">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="docentes">Añadir Docente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="listar-docentes">Mostrar Docentes</a>
+      </li>
+
+      <hr class="divider">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="alumnos">Añadir Alumno</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="listar-alumnos">Mostrar Alumnos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="listar-asistencias">Asistencias</a>
+      </li>
+
+      <hr class="divider">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="asistencias">!Presente!</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="contenido_dash">
+
+    <app-formulario-alumno
+      (enviarDato)="agregarNuevo($event)"
+    ></app-formulario-alumno>
+
+
+    <app-formulario-seccion
+      (enviarDato)="agregarNuevoClase($event)"
+    ></app-formulario-seccion>
+
+    <app-listar-alumno [alumnos]="elementosGuardados"></app-listar-alumno>
+    <hr>
+    <app-listar-clase [clases]="clasesGuardados"></app-listar-clase>
+
+  </div>
+</div>
+
+
